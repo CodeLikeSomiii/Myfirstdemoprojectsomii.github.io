@@ -1,0 +1,256 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+p{
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #606060;
+}
+.extra-div h2{
+    font-size: .9rem!important;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+/* actual css classes starts */
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.5),rgba(0,168,255,0.5)),url('./flat-lay-desk-concept-with-copyspace.jpg');
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 90%, 0 64%);
+    position: relative;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    opacity: .3;
+    z-index: -1;
+}
+li a{
+    color: #fff!important;
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: 87vh;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.header-btn a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    outline: none;
+}
+.header-btn a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 3px 3px 5px #000;
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 50px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20%);
+}
+.names h3{
+    font-size: .9rem;
+}
+.lala h3{
+    font-size: .9rem;
+}
+.Services{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.headings h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.names h3{
+    font-size: .9rem;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    height: 0.6rem;
+    margin-bottom: 25px;
+}
+i{
+    color: #2fccd0;
+}
+.project-work{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+
+/* Pricing-section-css */
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    position: relative;
+}
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(160deg,#16c9f6 55%,#fff 0%);
+    z-index: -1;
+}
+.card{
+    margin: 2rem 0;
+    text-align: center;
+    /* padding: 20px 0; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: .3s linear;
+}
+.card:hover{
+    transform: translateY(-20%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    color: #2fccd0;
+}
+.card:hover .card-body li{
+    color: #2fccd0;
+}
+.card:hover .card-footer a{
+    background-color: #2fccd0;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.card-header{
+    color: #16c9f6;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #606060;
+    text-transform: uppercase;
+}
+.card:hover .card-header{
+    color: #2fccd0;
+}
+.card-body{
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: 50px 0;
+}
+.card-body li{
+    margin-bottom: 10px;
+}
+.card-footer{
+    padding: 20px 0;
+    background: #606060;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.card-footer a{
+    color: #16c9f6;
+}
+.headings h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card2 img{
+    border-radius: 100%;
+}
+.radio{
+    margin: 10px 0;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+    z-index: -1;
+}
+.footer{
+    width: 100%;
+    background-color: #16c9f6;
+
+}
+.navigation h5 a{
+   display: flex;
+   flex-direction: column;
+}
+@media (max-width:768px) {
+    .pricing{
+        height: auto;
+    }
+}
